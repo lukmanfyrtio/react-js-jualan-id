@@ -1,0 +1,66 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.features__header {
+  padding: 20px 0px;
+  font-family: "MyriadPro-Bold, Myriad Pro";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.features__subheader {
+  font-family: "FuturaBT-Book, Futura Bk BT";
+  font-size: 16px;
+}
+
+.features > .MuiSvgIcon-root {
+  color: white;
+  background-color: #c5c5c5;
+  padding: 10px 15px;
+  border-radius: 9px;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 1080px) {
+  .features {
+    padding: 20px 15px;
+  }
+
+  .features__header {
+    padding: 15px 0px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .features__subheader {
+    font-size: 9px;
+  }
+  .features > .MuiSvgIcon-root {
+    padding: 8px 10px;
+    border-radius: 9px;
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features {
+    padding: 15px 10px;
+  }
+
+  .features__header {
+    padding: 10px 0px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .features__subheader {
+    font-size: 9px;
+  }
+  .features > .MuiSvgIcon-root {
+    padding: 6px 8px;
+    border-radius: 9px;
+    font-size: 40px;
+  }
+}

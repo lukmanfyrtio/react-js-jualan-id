@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -10,8 +10,24 @@ function Header() {
 
   const handleClick = () => setClick(!click);
 
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else {
+        handleShow(false);
+      }
+    });
+
+    // return () => {
+    //   window.removeEventListener("scroll");
+    // };
+  }, []);
+
   return (
-    <div className="header">
+    <div className={click || show ? "header active" : "header"}>
       <div className="header-menu" onClick={handleClick}>
         {click ? <CloseIcon /> : <MenuIcon />}
       </div>

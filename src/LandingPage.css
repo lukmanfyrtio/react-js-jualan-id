@@ -1,0 +1,169 @@
+.content1 {
+  display: flex;
+  background-color: #d9f0ff;
+  padding: 100px 150px;
+  opacity: 0.8;
+}
+.app_features {
+  padding: 70px 100px;
+}
+
+.daftar__banner {
+  padding: 60px 35px;
+}
+
+.content_app_features {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.app_fetaures_header {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "MyriadPro-Bold, Myriad Pro";
+}
+
+.content_app_features .features {
+  flex-basis: 25%;
+}
+
+.narration {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+
+.slideImage {
+  display: flex;
+  width: 50%;
+}
+.slideImage > img {
+  display: flex;
+  width: 100%;
+}
+.narration__bold {
+  transition: all 0.5s ease;
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+  font-family: "FuturaBT-Book, Futura Bk BT";
+}
+
+.narration__thin {
+  transition: all 0.5s ease;
+  width: 100%;
+  font-size: 16px;
+  font-family: "FuturaBT-Book, Futura Bk BT";
+}
+
+.signup_button {
+  transition: all 0.5s ease;
+  width: 100%;
+  display: flex;
+}
+
+.signup_link {
+  padding: 15px 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  background-color: #48c1ff;
+  color: white;
+  font-weight: bold;
+}
+@media screen and (max-width: 1080px) {
+  .content1 {
+    padding: 70px 100px;
+  }
+
+  .daftar__banner {
+    display: flex;
+    padding: 30px 20px;
+  }
+
+  .app_features {
+    padding: 50px 80px;
+  }
+
+  .app_fetaures_header {
+    font-size: 20px;
+  }
+  .narration__bold {
+    transition: all 0.5s ease;
+    width: auto;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .narration__thin {
+    transition: all 0.5s ease;
+    width: auto;
+    font-size: 12px;
+  }
+  .signup_link {
+    padding: 10px 9px;
+    text-decoration: none;
+    display: flex;
+    border-radius: 9px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content1 {
+    padding: 30px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .daftar__banner {
+    padding: 15px 10px;
+  }
+
+  .app_features {
+    padding: 15px 10px;
+  }
+
+  .app_fetaures_header {
+    font-size: 15px;
+  }
+  .narration {
+    width: 100%;
+    align-items: center;
+    order: 2;
+  }
+
+  .slideImage > img {
+    display: flex;
+    width: 100%;
+  }
+
+  .narration__bold {
+    transition: all 0.5s ease;
+    width: auto;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "FuturaBT-Book, Futura Bk BT";
+  }
+
+  .narration__thin {
+    transition: all 0.5s ease;
+    width: auto;
+    font-size: 8px;
+    font-family: "FuturaBT-Book, Futura Bk BT";
+  }
+  .signup_button {
+    transition: all 0.5s ease;
+    width: auto;
+  }
+
+  .signup_link {
+    padding: 8px 13px;
+    text-decoration: none;
+    display: flex;
+    border-radius: 9px;
+    font-weight: bold;
+  }
+}
